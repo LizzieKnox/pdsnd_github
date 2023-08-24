@@ -24,8 +24,10 @@ the following statistical information
 The files used were provide by udacity at the following [link](https://video.udacity-data.com/topher/2021/May/6094a7cc_all-project-files/all-project-files.zip "project files")
 
 The file names used in this project are
-_chicago.csv_
-*new_york_city.csv*
-_washington.csv_
+- _chicago.csv_
+- *new_york_city.csv*
+- _washington.csv_
+
+### Log of updates and revisions
 
 
