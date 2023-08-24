@@ -29,5 +29,8 @@ The file names used in this project are
 - _washington.csv_
 
 ### Log of updates and revisions
+|Date      | Changes                     |
+|----------|-----------------------------|
+|24/08/2023| Line Comments added to code |
 
 
