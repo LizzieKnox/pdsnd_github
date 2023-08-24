@@ -230,8 +230,8 @@ def display_data(df):
         while view_data.title() not in view_data_output:
             view_data  = input('{} isn\'t a vaild selection'.format(view_data))
 
-
 def main():
+    """main function that runs all the function together"""
     while True:
         pd.set_option('display.max_columns', None)
 
@@ -244,6 +244,7 @@ def main():
         user_stats(df, city)
         display_data(df)
 
+        #after going through all the functions this asks user if they want to restart
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
