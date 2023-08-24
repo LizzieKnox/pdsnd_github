@@ -1,10 +1,10 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'Chicago': 'chicago.csv',
-              'New York City': 'new_york_city.csv',
-              'Washington': 'washington.csv' }
+            'New York City': 'new_york_city.csv',
+            'Washington': 'washington.csv' }
+
 city_name = ''
 
 MONTH_DATA =  { 'Jan': 1,
@@ -234,7 +234,16 @@ def main():
     """main function that runs all the function together"""
     while True:
         pd.set_option('display.max_columns', None)
+    
+        main_func()
+        
+        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        if restart.lower() != 'yes':
+            break
 
+
+
+def main_func()
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
@@ -244,11 +253,14 @@ def main():
         user_stats(df, city)
         display_data(df)
 
+<<<<<<< HEAD
         #after going through all the functions this asks user if they want to restart
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
+=======
+>>>>>>> refactoring
 if __name__ == "__main__":
     main()
 
