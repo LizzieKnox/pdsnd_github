@@ -2,8 +2,9 @@ import time
 import pandas as pd
 
 CITY_DATA = { 'Chicago': 'chicago.csv',
-              'New York City': 'new_york_city.csv',
-              'Washington': 'washington.csv' }
+            'New York City': 'new_york_city.csv',
+            'Washington': 'washington.csv' }
+
 city_name = ''
 
 MONTH_DATA =  { 'Jan': 1,
@@ -233,7 +234,16 @@ def display_data(df):
 def main():
     while True:
         pd.set_option('display.max_columns', None)
+    
+        main_func()
+        
+        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        if restart.lower() != 'yes':
+            break
 
+
+
+def main_func()
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
@@ -242,10 +252,6 @@ def main():
         trip_duration_stats(df)
         user_stats(df, city)
         display_data(df)
-
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
-            break
 
 if __name__ == "__main__":
     main()
